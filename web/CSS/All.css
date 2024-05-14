@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbox ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbox ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbox ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.navbox ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbox ul ul li {
+    display: block;
+}
+
+.navbox ul li:hover ul {
+    display: block;
+}
+
+.navbox ul ul li a {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.navbox ul ul li a:hover {
+    background-color: lightgray;
+}
+
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+}
+
+.content {
+    flex: 3;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+form.search-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    }
+    
+
